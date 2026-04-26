@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Add Link/Tab to Reading List",
+  "description": "Add link or tab to Chrome Reading List",
+  "version": "1.1",
+  "author": "Yassine Maaroufi",
+  "permissions": [
+    "contextMenus", 
+    "readingList",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_title": "Add to Reading List",
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}

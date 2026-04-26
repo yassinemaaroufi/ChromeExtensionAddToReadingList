@@ -1,0 +1,21 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bookmark outline -->
+  <path d="M32 20 H96 V108 L64 88 L32 108 Z"
+        fill="none"
+        stroke="#3B82F6"
+        stroke-width="8"
+        stroke-linejoin="round"/>
+
+  <!-- Clock circle -->
+  <circle cx="92" cy="92" r="20" fill="#3B82F6"/>
+
+  <!-- Clock hands -->
+  <line x1="92" y1="92" x2="92" y2="80"
+        stroke="white"
+        stroke-width="4"
+        stroke-linecap="round"/>
+  <line x1="92" y1="92" x2="102" y2="92"
+        stroke="white"
+        stroke-width="4"
+        stroke-linecap="round"/>
+</svg>
